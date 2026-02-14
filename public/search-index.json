@@ -1,0 +1,163 @@
+[
+  {
+    "slug": "introducao",
+    "title": "O que é o EduSaaS",
+    "description": "Conheça a plataforma completa de gestão para escolas de cursos profissionalizantes.",
+    "section": "Introdução",
+    "order": 1
+  },
+  {
+    "slug": "para-que-serve",
+    "title": "Para que ele serve",
+    "description": "Veja como o EduSaaS resolve cada necessidade da sua escola profissionalizante.",
+    "section": "Introdução",
+    "order": 2
+  },
+  {
+    "slug": "primeiros-passos",
+    "title": "Primeiros Passos",
+    "description": "Aprenda a acessar o sistema, navegar pelos módulos e personalizar sua experiência.",
+    "section": "Primeiros Passos",
+    "order": 3
+  },
+  {
+    "slug": "fluxo-de-trabalho",
+    "title": "Fluxo Macro de Trabalho",
+    "description": "Entenda o fluxo operacional completo do EduSaaS, da captação ao acompanhamento.",
+    "section": "Primeiros Passos",
+    "order": 4
+  },
+  {
+    "slug": "mapa-dos-modulos",
+    "title": "Mapa dos Módulos",
+    "description": "Visão geral de todos os módulos e sub-funcionalidades do EduSaaS.",
+    "section": "Primeiros Passos",
+    "order": 5
+  },
+  {
+    "slug": "telepesquisa",
+    "title": "Telepesquisa",
+    "description": "Módulo de captação de leads — cadastro de jovens e primeiro contato.",
+    "section": "Módulos",
+    "order": 6
+  },
+  {
+    "slug": "teleprojeto",
+    "title": "Teleprojeto",
+    "description": "Módulo de agendamento de visitas — agende jovens e responsáveis na escola.",
+    "section": "Módulos",
+    "order": 7
+  },
+  {
+    "slug": "lider-tele",
+    "title": "Líder Tele",
+    "description": "Supervisão das equipes de Telepesquisa e Teleprojeto — distribuição de fichas e produtividade.",
+    "section": "Módulos",
+    "order": 8
+  },
+  {
+    "slug": "recepcao",
+    "title": "Recepção",
+    "description": "Controle de chegada dos jovens agendados — check-in, ficha e fluxo de status.",
+    "section": "Módulos",
+    "order": 9
+  },
+  {
+    "slug": "comercial",
+    "title": "Comercial",
+    "description": "Atendimento e matrícula de jovens — fluxo completo do divulgador ao fechamento.",
+    "section": "Módulos",
+    "order": 10
+  },
+  {
+    "slug": "administrativo",
+    "title": "Administrativo",
+    "description": "Gestão de matrículas, contratos, chamadas e pagamentos.",
+    "section": "Módulos",
+    "order": 11
+  },
+  {
+    "slug": "pedagogico",
+    "title": "Pedagógico",
+    "description": "Acompanhamento de alunos, turmas, chamadas, pendências e disparos WhatsApp.",
+    "section": "Módulos",
+    "order": 12
+  },
+  {
+    "slug": "financeiro",
+    "title": "Financeiro",
+    "description": "Controle completo de entradas, saídas, conciliação bancária e extrato financeiro.",
+    "section": "Módulos",
+    "order": 13
+  },
+  {
+    "slug": "recursos-humanos",
+    "title": "Recursos Humanos",
+    "description": "Encaminhamento profissional de alunos — empresas parceiras, vagas e carta de encaminhamento.",
+    "section": "Módulos",
+    "order": 14
+  },
+  {
+    "slug": "multifiliais",
+    "title": "Multifiliais",
+    "description": "Visão consolidada de todas as unidades — comparativos de desempenho entre filiais.",
+    "section": "Módulos",
+    "order": 15
+  },
+  {
+    "slug": "area-do-aluno",
+    "title": "Área do Aluno",
+    "description": "Aulas interativas, progresso e calendário — o portal digital do aluno.",
+    "section": "Módulos",
+    "order": 16
+  },
+  {
+    "slug": "configuracoes",
+    "title": "Configurações",
+    "description": "Todas as configurações do sistema — usuários, cargos, WhatsApp, cursos, turmas e mais.",
+    "section": "Configuração",
+    "order": 17
+  },
+  {
+    "slug": "cargos-e-permissoes",
+    "title": "Cargos e Permissões",
+    "description": "Sistema de cargos e permissões — controle granular de acesso por função.",
+    "section": "Gestão",
+    "order": 18
+  },
+  {
+    "slug": "como-as-areas-se-conectam",
+    "title": "Como as Áreas se Conectam",
+    "description": "Entenda como os dados fluem entre os módulos do EduSaaS.",
+    "section": "Gestão",
+    "order": 19
+  },
+  {
+    "slug": "faq",
+    "title": "FAQ — Perguntas Frequentes",
+    "description": "Respostas para as dúvidas mais comuns sobre o EduSaaS.",
+    "section": "Ajuda",
+    "order": 20
+  },
+  {
+    "slug": "boas-praticas",
+    "title": "Boas Práticas",
+    "description": "Dicas essenciais para usar o EduSaaS com máxima eficiência e segurança.",
+    "section": "Ajuda",
+    "order": 21
+  },
+  {
+    "slug": "o-que-nao-fazer",
+    "title": "O que NÃO Fazer",
+    "description": "Erros comuns que devem ser evitados ao usar o EduSaaS.",
+    "section": "Ajuda",
+    "order": 22
+  },
+  {
+    "slug": "resolucao-de-problemas",
+    "title": "Resolução de Problemas",
+    "description": "Soluções para os problemas mais comuns ao usar o EduSaaS.",
+    "section": "Ajuda",
+    "order": 23
+  }
+]

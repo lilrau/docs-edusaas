@@ -1,0 +1,30 @@
+---
+title: "Como as Áreas se Conectam"
+description: "Entenda como os dados fluem entre os módulos do EduSaaS."
+icon: "GitBranch"
+section: "Gestão"
+order: 19
+---
+
+## Como as Áreas se Conectam
+
+O EduSaaS foi projetado como um sistema **integrado**. Veja como as informações fluem entre os módulos:
+
+| De | Para | O que é passado |
+|----|------|-----------------|
+| **Telepesquisa** | **Teleprojeto** | Jovem cadastrado (dados do lead) |
+| **Teleprojeto** | **Recepção** | Agendamento (data, hora, dados do jovem) |
+| **Recepção** | **Comercial** | Jovem liberado (ficha preenchida, status "liberado") |
+| **Comercial** | **Administrativo** | Matrícula realizada (dados financeiros e acadêmicos) |
+| **Administrativo** | **Pedagógico** | Aluno (turma, contrato, dados completos) |
+| **Pedagógico** | **Recursos Humanos** | Aluno elegível (frequência, tempo de curso) |
+| **Administrativo** | **Financeiro** | Dados de pagamento (parcelas, plano de pagamento) |
+| **Configurações** | **Todos os Módulos** | Cursos, turmas, salas, planos, permissões, etc. |
+
+<Callout type="tip" title="Dados herdados automaticamente">
+Os dados registrados em uma etapa **não precisam ser digitados novamente** na etapa seguinte. Tudo é herdado automaticamente. Isso elimina retrabalho e reduz erros de digitação.
+</Callout>
+
+<Callout type="info">
+As Configurações alimentam todos os módulos. Sempre que um curso, turma ou plano de pagamento for alterado, a mudança reflete automaticamente em todo o sistema.
+</Callout>

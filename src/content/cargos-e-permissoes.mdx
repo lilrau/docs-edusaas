@@ -1,0 +1,39 @@
+---
+title: "Cargos e Permissões"
+description: "Sistema de cargos e permissões — controle granular de acesso por função."
+icon: "Shield"
+section: "Gestão"
+order: 18
+---
+
+## Cargos e Permissões
+
+O EduSaaS possui um sistema de cargos robusto e flexível. Cada cargo tem permissões predefinidas que podem ser **personalizadas pelo administrador**.
+
+| Cargo | Acesso Principal | Descrição |
+|-------|------------------|-----------|
+| **Admin** | Tudo | Acesso irrestrito a todos os módulos e configurações |
+| **Gerente Operacional** | Tele, Comercial, Recepção, Pedagógico, Admin | Gerencia toda a filial |
+| **Gerente Administrativo** | Pedagógico, Admin, Financeiro | Supervisiona matrículas, dados e finanças |
+| **Gerente Comercial** | Comercial (completo) | Supervisiona o setor comercial |
+| **Líder Tele** | Telepesquisa, Teleprojeto | Gerencia as equipes de tele |
+| **Operador de Telepesquisa** | Telepesquisa | Cadastro de jovens |
+| **Operador de Teleprojeto** | Teleprojeto | Agendamentos |
+| **Recepcionista** | Recepção | Check-in e triagem |
+| **Divulgador** | Comercial (apenas suas fichas) | Atende e matricula jovens atribuídos |
+| **Professor** | Pedagógico (turmas e chamadas) | Acompanha suas turmas |
+
+### Como editar permissões de um cargo
+
+1. Acesse **Configurações** → **Cargos**.
+2. Clique no **cargo** desejado.
+3. Marque/desmarque as **permissões** disponíveis.
+4. Clique em **Salvar** para aplicar as alterações.
+
+<Callout type="danger" title="Cuidado com permissões">
+Alterações em permissões afetam **todos os usuários** com aquele cargo. Tenha cuidado ao remover permissões — teste com um usuário antes de aplicar em massa.
+</Callout>
+
+<Callout type="tip" title="Pro Tip: Princípio do menor privilégio">
+Conceda apenas as permissões necessárias para cada cargo. Isso reduz riscos de erros acidentais e mantém a segurança do sistema.
+</Callout>

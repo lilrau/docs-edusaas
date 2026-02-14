@@ -1,0 +1,50 @@
+---
+title: "Recepção"
+description: "Controle de chegada dos jovens agendados — check-in, ficha e fluxo de status."
+icon: "Building2"
+section: "Módulos"
+order: 9
+---
+
+## Recepção
+
+> **Quem usa:** Recepcionista
+> **Objetivo:** Receber os jovens agendados, preencher a ficha de dados e controlar o fluxo de atendimento.
+
+### Dashboard
+
+Exibe os números do dia em tempo real:
+
+- **Total de agendamentos** do dia.
+- **Confirmados, Retidos, Em Atendimento, Liberados, Atendidos, Desclassificados, Foi Embora.**
+- **Lista de próximos agendamentos** com horário e status.
+
+### Como gerenciar a chegada de um jovem
+
+1. Acesse **Recepção** → aba **Agendamentos**.
+2. Localize o jovem na lista (filtre por data, status ou busque pelo nome).
+3. O status inicial é **Agendado**. Avance o status conforme o fluxo:
+
+| Status | Significado | Ação |
+|--------|-------------|------|
+| **Agendado** | Registro criado, aguardando chegada | — |
+| **Confirmado** | Jovem confirmou presença | Clicar em "Avançar" |
+| **Presente** | Jovem chegou na escola | Clicar em "Avançar" |
+| **Docs OK** | Documentos verificados | Clicar em "Avançar" |
+| **Ficha Preenchida** | Dados completos no sistema | Clicar em "Avançar" |
+| **Em Andamento** | Sendo atendido | Clicar em "Avançar" |
+| **Retido** | Aguardando alguma pendência | Clicar em "Avançar" quando resolvido |
+| **Liberado** | Liberado para o Comercial | Automático ou "Avançar" |
+| **Atendido** | Finalizou o atendimento | Status final positivo |
+| **Desclassificado** | Não atendeu os critérios | Status final negativo |
+| **Foi Embora** | Saiu antes do atendimento | Botão "Foi Embora" |
+
+4. Para **preencher a ficha**, clique em **Preencher Ficha** no agendamento do jovem, preencha todos os dados e clique em **Salvar**.
+
+<Callout type="warning">
+O jovem só será liberado para o Comercial após a ficha estar completamente preenchida e o status avançar para "Liberado".
+</Callout>
+
+<Callout type="tip" title="Pro Tip: Mantenha o dashboard aberto">
+Deixe o dashboard da Recepção aberto em uma aba dedicada. Ele atualiza em tempo real e permite acompanhar o fluxo de jovens sem precisar recarregar a página.
+</Callout>

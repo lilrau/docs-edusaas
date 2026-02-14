@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-sidebar: #f1f5f9;
+    --bg-code: #f1f5f9;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --border-color: #e2e8f0;
+    --brand: #6366f1;
+    --brand-light: #818cf8;
+    --brand-dark: #4f46e5;
+    --brand-bg: #eef2ff;
+  }
+
+  .dark {
+    --bg-primary: #0a0e1a;
+    --bg-secondary: #0f172a;
+    --bg-card: #111827;
+    --bg-sidebar: #0f172a;
+    --bg-code: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --border-color: #1e293b;
+    --brand: #818cf8;
+    --brand-light: #a5b4fc;
+    --brand-dark: #6366f1;
+    --brand-bg: #1e1b4b;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  * {
+    @apply border-[var(--border-color)];
+  }
+}
+
+@layer components {
+  .sidebar-link {
+    @apply flex items-center gap-2 px-3 py-1.5 text-sm rounded-md transition-colors duration-150;
+    color: var(--text-secondary);
+  }
+
+  .sidebar-link:hover {
+    color: var(--text-primary);
+    background: var(--bg-card);
+  }
+
+  .sidebar-link.active {
+    color: var(--brand);
+    background: var(--brand-bg);
+    font-weight: 500;
+  }
+
+  .prose-docs {
+    @apply leading-relaxed;
+  }
+
+  .prose-docs h1 {
+    @apply text-3xl font-bold mb-4 mt-0;
+    color: var(--text-primary);
+  }
+
+  .prose-docs h2 {
+    @apply text-2xl font-semibold mb-3 mt-10 pb-2;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .prose-docs h3 {
+    @apply text-xl font-semibold mb-2 mt-8;
+    color: var(--text-primary);
+  }
+
+  .prose-docs h4 {
+    @apply text-lg font-semibold mb-2 mt-6;
+    color: var(--text-primary);
+  }
+
+  .prose-docs p {
+    @apply mb-4;
+    color: var(--text-secondary);
+  }
+
+  .prose-docs ul,
+  .prose-docs ol {
+    @apply mb-4 pl-6;
+    color: var(--text-secondary);
+  }
+
+  .prose-docs ul {
+    @apply list-disc;
+  }
+
+  .prose-docs ol {
+    @apply list-decimal;
+  }
+
+  .prose-docs li {
+    @apply mb-1.5;
+  }
+
+  .prose-docs strong {
+    color: var(--text-primary);
+    @apply font-semibold;
+  }
+
+  .prose-docs code {
+    @apply text-sm px-1.5 py-0.5 rounded font-mono;
+    background: var(--bg-code);
+    color: var(--brand);
+  }
+
+  .prose-docs pre {
+    @apply p-4 rounded-lg mb-4 overflow-x-auto text-sm;
+    background: var(--bg-code);
+  }
+
+  .prose-docs pre code {
+    @apply p-0 bg-transparent;
+    color: var(--text-primary);
+  }
+
+  .prose-docs table {
+    @apply w-full mb-6 text-sm;
+    border-collapse: collapse;
+  }
+
+  .prose-docs thead {
+    background: var(--bg-code);
+  }
+
+  .prose-docs th {
+    @apply px-4 py-2.5 text-left font-semibold text-sm;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--border-color);
+  }
+
+  .prose-docs td {
+    @apply px-4 py-2.5;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .prose-docs tr:hover td {
+    background: var(--bg-secondary);
+  }
+
+  .prose-docs blockquote {
+    @apply pl-4 mb-4 italic;
+    border-left: 3px solid var(--brand);
+    color: var(--text-secondary);
+  }
+
+  .prose-docs a {
+    color: var(--brand);
+    @apply underline underline-offset-2 decoration-brand-300 dark:decoration-brand-700 hover:decoration-brand-500;
+  }
+
+  .prose-docs hr {
+    @apply my-8;
+    border-color: var(--border-color);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full;
+  background: var(--text-muted);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Search highlight */
+.search-highlight {
+  @apply bg-yellow-200 dark:bg-yellow-900/50 rounded px-0.5;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.2s ease-out;
+}

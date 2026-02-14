@@ -1,0 +1,81 @@
+---
+title: "Configurações"
+description: "Todas as configurações do sistema — usuários, cargos, WhatsApp, cursos, turmas e mais."
+icon: "Settings"
+section: "Configuração"
+order: 17
+---
+
+## Configurações
+
+As configurações são acessadas pelo menu **Configurações** no sidebar. A disponibilidade de cada item depende do seu cargo/permissões.
+
+### Configurações disponíveis para todos os usuários
+
+| Configuração | O que faz |
+|---|---|
+| **Usuário** | Editar nome, e-mail e senha pessoais |
+| **Aparência** | Trocar tema (claro/escuro/auto) e cor de destaque |
+
+### Configurações disponíveis apenas para Administradores
+
+| Configuração | O que faz |
+|---|---|
+| **Usuários** | Criar, editar e remover usuários do sistema |
+| **Cargos (Permissões)** | Gerenciar cargos e suas permissões de acesso |
+| **Canais WhatsApp** | Conectar e gerenciar instâncias de WhatsApp para disparos automáticos |
+| **Templates WhatsApp** | Criar e editar modelos de mensagens para envios automatizados |
+| **Cursos** | Cadastrar e editar os cursos oferecidos pela instituição |
+| **Salas** | Cadastrar as salas de aula da unidade |
+| **Turmas** | Criar e gerenciar turmas (vincular curso, sala, professor, horários) |
+| **Planos de Pagamento** | Configurar planos e condições de pagamento para matrículas |
+| **Calendário Pedagógico** | Definir o calendário com feriados e dias letivos |
+| **Aulas Interativas** | Gerenciar credenciais e acessos ao módulo de aulas 7way |
+| **Planos de Conta** | Criar a estrutura de categorias financeiras (entradas e saídas) |
+| **Caixas** | Cadastrar e gerenciar os caixas financeiros com permissões de acesso |
+| **Empresas e Pessoas** | Cadastrar dados da empresa para contratos e documentos |
+| **Dados Contratuais** | Configurar os dados da filial que aparecem nos contratos |
+| **Personificar Usuário** | Acessar temporariamente a conta de outro usuário (para suporte) |
+| **Sistema** | Configurações gerais do sistema |
+| **Importação** | Importar alunos e dados em lote via planilha |
+
+### Como conectar o WhatsApp
+
+1. Acesse **Configurações** → **Canais WhatsApp**.
+2. Clique em **Nova Instância**.
+3. Nomeie a instância (ex: "WhatsApp Pedagógico").
+4. Clique em **Gerar QR Code**.
+5. Abra o **WhatsApp** no celular → **Aparelhos Conectados** → **Conectar Aparelho**.
+6. Escaneie o QR code exibido na tela.
+7. Aguarde a conexão ser confirmada (status ficará **Conectado** em verde).
+
+<Callout type="warning">
+O celular vinculado deve permanecer com internet ativa para manter a conexão.
+</Callout>
+
+### Como usar o recurso de Personificação (Impersonate)
+
+1. Acesse **Configurações** → **Personificar Usuário**.
+2. Selecione o **usuário** que deseja personificar.
+3. Clique em **Iniciar Personificação**.
+4. O sistema abrirá a sessão com a visão e permissões daquele usuário.
+5. Para **sair da personificação**, clique no botão de saída que aparece no topo da página.
+
+<Callout type="tip" title="Pro Tip: Use para suporte">
+A personificação é ideal para diagnosticar problemas reportados por colaboradores. Você verá exatamente o que o usuário vê, com as mesmas permissões.
+</Callout>
+
+### Como importar dados em lote
+
+1. Acesse **Configurações** → **Importação**.
+2. Clique em **Nova Importação**.
+3. Selecione o **arquivo** (planilha Excel/CSV).
+4. O sistema verificará **duplicatas** e exibirá um relatório.
+5. Resolva as duplicatas (manter/substituir/pular).
+6. Mapeie os **planos de pagamento e cursos** se necessário.
+7. Clique em **Processar Importação**.
+8. Acompanhe o progresso. Caso haja erros, baixe o **relatório de erros** para correção.
+
+<Callout type="tip" title="Pro Tip: Prepare a planilha antes">
+Antes de importar, certifique-se de que a planilha segue o formato esperado pelo sistema. Remova linhas em branco, padronize telefones com DDD e verifique se não há duplicatas na própria planilha.
+</Callout>
