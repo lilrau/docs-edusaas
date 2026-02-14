@@ -61,10 +61,10 @@ interface ModuleGridProps {
     }[];
 }
 
-export function ModuleGrid({ modules }: ModuleGridProps) {
+export function ModuleGrid({ modules = [] }: ModuleGridProps) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
-            {modules.map((module) => {
+            {modules?.map((module) => {
                 const Icon = iconMap[module.title] || Settings;
                 const colorClass = colorMap[module.title] || "border-slate-500/20 text-slate-500";
 
