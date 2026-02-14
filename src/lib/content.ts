@@ -87,7 +87,7 @@ export function getSidebarSections(): SidebarSection[] {
       sectionMap.delete(title);
     }
   }
-  for (const [title, items] of sectionMap) {
+  for (const [title, items] of Array.from(sectionMap)) {
     sections.push({ title, items });
   }
   return sections;

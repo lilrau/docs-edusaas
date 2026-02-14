@@ -15,16 +15,16 @@ function slugify(text: string): string {
 }
 
 function createHeading(level: number) {
-  const Tag = `h${level}` as keyof JSX.IntrinsicElements;
-  return function Heading({ children }: { children: React.ReactNode }) {
+  const Tag = `h${level}` as "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  return function Heading({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
     const text = typeof children === "string" ? children : "";
     const id = slugify(text);
-    return (
-      <Tag id={id}>
-        <a href={`#${id}`} className="no-underline hover:underline">
-          {children}
-        </a>
-      </Tag>
+    return React.createElement(
+      Tag,
+      { id, ...props },
+      <a href={`#${id}`} className="no-underline hover:underline">
+        {children}
+      </a>
     );
   };
 }
